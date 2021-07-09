@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>child doc 2</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#text1").hide();
+    });
+    $("#show").click(function(){
+        $("#text1").show();
+    });
+});
+
+</script>
+</head>
+<body style="background-color:brown">
+<br/>
+<br/>
+<br/>
+<div class="content" id="main">
+<label for=text1>Type what ever you wish</label>
+<input id=text1 type=text/>
+<br/>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Frames Test Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-tabs" id="myTabs">
+                <li title="home"><a href="#home" data-toggle="tab">Home</a>
+                </li>
+                <li title="Child1"  class="active" ><a href="#mps"  data-toggle="tab">Child1</a>
+                </li>
+                <li title="Child2"><a href="#ytb" data-toggle="tab">Child2</a>
+                </li>
+                <li title="Child3"><a href="#rn" data-toggle="tab">Child3</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+
+                <div class="tab-pane" id="home">
+                    <p>Test Tab</p>
+                    <p>Boot Tabs on click event</p>
+                </div>
+
+                <div class="tab-pane active" id="mps" data-src="child1.html">
+                    <iframe src="child1.html" title="Child1" width="400" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+
+                <div class="tab-pane" id="ytb" data-src="child2.html">
+                    <iframe src="child2.html" title="Child2" width="400" height="300" frameborder="0" allowfullscreen="allowFullScreen"></iframe>
+                </div>
+
+
+                <div class="tab-pane" id="rn" title="Child3" data-src="child3.html">
+                    <iframe src="child3.html" width="400" height="300" frameborder="0" webkitallowfullscreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowFullScreen"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+/*
+$('#myTabs').click('show', function(e) {
+    paneID = $(e.target).attr('href');
+    src = $(paneID).attr('data-src');
+    // if the iframe hasn't already been loaded once
+    if($(paneID+" iframe").attr("src")=="")
+    {
+        $(paneID+" iframe").attr("src",src);
+    }
+});
+*/
+</script>
+</body>
+</html>
